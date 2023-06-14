@@ -809,7 +809,11 @@ export function Chat() {
                 <div className={styles["chat-message-container"]}>
                   <div className={styles["chat-message-avatar"]}>
                     {message.role === "user" ? (
-                      <Avatar avatar={config.avatar} />
+                      //img width:50px
+                      <img
+                        src="http://100beta.lhotsetech.com/img/logo.125a7474.png"
+                        width="30"
+                      ></img>
                     ) : (
                       <MaskAvatar mask={session.mask} />
                     )}

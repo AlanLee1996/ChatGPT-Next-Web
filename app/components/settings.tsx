@@ -298,7 +298,7 @@ export function Settings() {
           </div>
         </div>
         <div className="window-actions">
-          <div className="window-action-button">
+          {/* <div className="window-action-button">
             <IconButton
               icon={<ClearIcon />}
               onClick={() => {
@@ -321,7 +321,7 @@ export function Settings() {
               bordered
               title={Locale.Settings.Actions.ResetAll}
             />
-          </div>
+          </div> */}
           <div className="window-action-button">
             <IconButton
               icon={<CloseIcon />}
@@ -334,7 +334,7 @@ export function Settings() {
       </div>
       <div className={styles["settings"]}>
         <List>
-          <ListItem title={Locale.Settings.Avatar}>
+          {/* <ListItem title={Locale.Settings.Avatar}>
             <Popover
               onClose={() => setShowEmojiPicker(false)}
               content={
@@ -354,9 +354,9 @@ export function Settings() {
                 <Avatar avatar={config.avatar} />
               </div>
             </Popover>
-          </ListItem>
+          </ListItem> */}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
               checkingUpdate
@@ -379,7 +379,7 @@ export function Settings() {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </ListItem>
+          </ListItem> */}
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select
@@ -399,7 +399,7 @@ export function Settings() {
             </Select>
           </ListItem>
 
-          <ListItem title={Locale.Settings.Theme}>
+          {/* <ListItem title={Locale.Settings.Theme}>
             <Select
               value={config.theme}
               onChange={(e) => {
@@ -414,7 +414,7 @@ export function Settings() {
                 </option>
               ))}
             </Select>
-          </ListItem>
+          </ListItem> */}
 
           <ListItem title={Locale.Settings.Lang.Name}>
             <Select
@@ -484,7 +484,7 @@ export function Settings() {
           </ListItem>
         </List>
 
-        <List>
+        {/* <List>
           {enabledAccessControl ? (
             <ListItem
               title={Locale.Settings.AccessCode.Title}
@@ -557,7 +557,7 @@ export function Settings() {
               ></input>
             </ListItem>
           ) : null}
-        </List>
+        </List> */}
 
         <List>
           <ListItem
